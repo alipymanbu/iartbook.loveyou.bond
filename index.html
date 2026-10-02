@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iArtbook 安卓绘画应用介绍：画笔、图层与填色玩法一应俱全</title>
+  <meta name="description" content="iArtbook 是一款集绘画工作台与主题填色于一体的安卓应用：多种笔刷、无上限图层、二十余种混合模式，还有数字填色、像素涂色与逐帧动画。本文介绍它的功能、手势操作与版本参数，并提供安装文件资源的获取指引。">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/"><span class="brand-dot" aria-hidden="true"></span>iArtbook</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="展开导航菜单">☰</button>
+      <nav class="nav-links" aria-label="站内导航">
+        <a href="#features">功能亮点</a>
+        <a href="#play">三种玩法</a>
+        <a href="#gesture">手势速查</a>
+        <a href="#spec">版本参数</a>
+        <a href="#faq">常见问题</a>
+        <a class="nav-cta" href="/download.html">获取安装文件资源</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="kicker">绘画 · 填色 · 逐帧动画</span>
+          <h1>在手机上，<em>支起一张画布</em></h1>
+          <p class="lead">iArtbook 把一套完整的绘画工作台装进了安卓设备：铅笔起稿、水彩晕染、图层分色、逐帧动画，另一侧还备好了主题填色与像素涂色，随手就能画上几笔。</p>
+          <div class="badges">
+            <span class="badge">版本 2.2.7</span>
+            <span class="badge">安装包 200.88M</span>
+            <span class="badge">安卓 5.2 及以上</span>
+            <span class="badge">简体中文</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-link="download" href="#">获取安装文件资源</a>
+            <a class="btn btn-ghost" href="/download.html">查看安装指引</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 340" role="img" aria-label="画架上的插画与调色盘">
+            <!-- 画架 -->
+            <g stroke="#2b2622" stroke-width="4" stroke-linecap="round" fill="none">
+              <line x1="120" y1="60" x2="76" y2="316"/>
+              <line x1="300" y1="60" x2="344" y2="316"/>
+              <line x1="210" y1="40" x2="210" y2="316"/>
+              <line x1="140" y1="220" x2="280" y2="220"/>
+            </g>
+            <!-- 画布 -->
+            <g>
+              <rect x="118" y="64" width="184" height="150" fill="#fffdf8" stroke="#2b2622" stroke-width="4"/>
+              <circle cx="256" cy="106" r="16" fill="#d9a441" stroke="#2b2622" stroke-width="3"/>
+              <path d="M126 190 L176 128 L214 172 L246 138 L294 190 Z" fill="#4a7c59" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M126 190 L170 148 L206 190 Z" fill="#2f5d8a" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+            </g>
+            <!-- 调色盘 -->
+            <g>
+              <path d="M52 262c0-24 26-42 58-42s58 18 58 42-12 40-30 44c-10 2-12-6-20-6s-8 8-20 6c-24-4-46-20-46-44z" fill="#e8dfcf" stroke="#2b2622" stroke-width="4"/>
+              <circle cx="82" cy="252" r="7" fill="#c4553d" stroke="#2b2622" stroke-width="2.5"/>
+              <circle cx="106" cy="240" r="7" fill="#d9a441" stroke="#2b2622" stroke-width="2.5"/>
+              <circle cx="132" cy="244" r="7" fill="#2f5d8a" stroke="#2b2622" stroke-width="2.5"/>
+              <circle cx="146" cy="266" r="7" fill="#4a7c59" stroke="#2b2622" stroke-width="2.5"/>
+            </g>
+            <!-- 画笔 -->
+            <g stroke="#2b2622" stroke-width="3" stroke-linecap="round">
+              <line x1="300" y1="290" x2="368" y2="230"/>
+              <path d="M292 300 l10-12 8 7-10 12z" fill="#c4553d"/>
+            </g>
+            <!-- 笔触线 -->
+            <path d="M40 96 q20 -18 40 0 t40 0" fill="none" stroke="#c4553d" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+            <path d="M286 76 q18 -14 36 0 t36 0" fill="none" stroke="#2f5d8a" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+          </svg>
+          <span class="scribble">落笔无悔，画错就撤</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 数字条 -->
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat"><b data-count="40" aria-label="40">40</b><span>预设调色板 40 余种</span></div>
+        <div class="stat"><b data-count="27" aria-label="27">27</b><span>图层混合模式（有版本标注）</span></div>
+        <div class="stat"><b data-count="100" aria-label="100">100</b><span>级撤销 / 重做（评测数据）</span></div>
+        <div class="stat"><b>4K</b><span>画布最高 4096×4096（评测数据）</span></div>
+      </div>
+    </section>
+
+    <!-- 功能亮点 -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>绘画工作台里有什么
+            <svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 q25 -8 50 0 t50 0 t50 0 t46 0" fill="none" stroke="#c4553d" stroke-width="3" stroke-linecap="round"/></svg>
+          </h2>
+          <p>这些能力决定了它不是“随手涂鸦”，而是能从头画到完稿的一整套工具。</p>
+        </div>
+        <div class="bento">
+          <div class="card b1 reveal">
+            <span class="tag" style="background:var(--red)">笔刷系统</span>
+            <h3>多种媒质笔刷，手感各不相同</h3>
+            <p>铅笔打稿、水彩晕染、炭笔铺明暗、马克笔平涂、喷枪做柔和光影，还有记号笔勾边与涂抹笔揉色；按干湿特性又分干性、湿润、光泽几类。有评测称预装笔刷达 150 款以上，画的时候各试一遍，留下顺手的即可。</p>
+            <ul>
+              <li>笔刷详情设置有 50 余项参数，常用的就粗细、不透明度、硬度、纹理几样</li>
+              <li>书法稳定类选项调高后，用手指也能勾出顺滑线条</li>
+              <li>笔刷可重命名、可导出成文件，换机时自己调的笔刷能带走</li>
+            </ul>
+          </div>
+          <div class="card b2 reveal">
+            <span class="tag" style="background:var(--blue)">图层</span>
+            <h3>无数量上限的图层</h3>
+            <p>勾线、上色、背景各占一层，互不干扰；支持排序、显隐、透明度、复制、蒙版与无损变换，相册里的图也能直接作为新图层进来。</p>
+          </div>
+          <div class="card b3 reveal">
+            <span class="tag" style="background:var(--green)">配色</span>
+            <h3>两个取色器 + 混色器</h3>
+            <p>先取色调色，再混色观察过渡；40 余套预设调色板纯色与渐变都有，也能自建调色板并导入导出，画系列图时用色统一。</p>
+          </div>
+          <div class="card b4 reveal">
+            <span class="tag" style="background:var(--yellow)">混合模式</span>
+            <h3>二十余种混合模式，常用就四个</h3>
+            <p>正片叠底做投影加深、滤色提亮做光效、柔光温和过渡明暗、叠加增强对比——拿不准时先试前两个，八九成的场景都是它们。选区工具还能配合羽化数值，做出发光的柔和边缘。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三种玩法 -->
+    <section class="section" id="play">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>一套应用，三种打开方式
+            <svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 q25 -8 50 0 t50 0 t50 0 t46 0" fill="none" stroke="#2f5d8a" stroke-width="3" stroke-linecap="round"/></svg>
+          </h2>
+          <p>想认真画、想解压涂、想做动图，入口都在主界面上。</p>
+        </div>
+        <div class="play-grid">
+          <div class="play reveal">
+            <div class="play-head ph-red">
+              <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M6 28 L24 10 l4 4 L10 32 H6z" fill="#fff"/><path d="M26 8 l3-3 4 4-3 3z" fill="#fff" opacity=".7"/></svg>
+              <h3>自由绘画</h3>
+            </div>
+            <div class="play-body">
+              <p>新建画布从零开始：预设尺寸任选，也能自定义宽高；支持导入照片当底稿临摹，画透视时还有消失点与辐射线辅助参考。</p>
+              <ul>
+                <li>「跟画」模式：在「你的画」与课程图之间对照着画</li>
+                <li>左手党可切换左手布局，主题色与深浅色随喜好调</li>
+                <li>作品自动保存，正常退出不丢</li>
+              </ul>
+            </div>
+          </div>
+          <div class="play reveal">
+            <div class="play-head ph-blue">
+              <svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="23" cy="15" r="4" fill="#fff" opacity=".8"/><circle cx="16" cy="24" r="4.5" fill="#fff" opacity=".6"/></svg>
+              <h3>主题填色</h3>
+            </div>
+            <div class="play-body">
+              <p>不用自己起稿，选一张线稿直接上色：点按整块填色、笔刷手动涂、按住色圈往画布上一拖也行。</p>
+              <ul>
+                <li>数字填色：按编号挑线稿，一套调色板配好色</li>
+                <li>照片涂色：把自己的照片套进线稿里涂</li>
+                <li>像素涂色与曼荼罗对称图案，考验耐心</li>
+              </ul>
+            </div>
+          </div>
+          <div class="play reveal">
+            <div class="play-head ph-green">
+              <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="4" y="8" width="9" height="9" fill="#fff"/><rect x="14" y="8" width="9" height="9" fill="#fff" opacity=".75"/><rect x="24" y="8" width="6" height="9" fill="#fff" opacity=".5"/><path d="M6 24h22" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+              <h3>逐帧动画与延时摄影</h3>
+            </div>
+            <div class="play-body">
+              <p>动画工作台帧数无上限、支持多个动画层，每一帧画一点连起来就是逐帧动画；整个绘画过程还能录成延时短片。</p>
+              <ul>
+                <li>导出格式：MP4、HEVC、GIF、APNG</li>
+                <li>发聊天窗口用 GIF，要画质选 MP4 / HEVC</li>
+                <li>静态作品可存 PNG（含透明底）或 JPEG</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 手势速查 -->
+    <section class="section" id="gesture">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>画布手势速查
+            <svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 q25 -8 50 0 t50 0 t50 0 t46 0" fill="none" stroke="#4a7c59" stroke-width="3" stroke-linecap="round"/></svg>
+          </h2>
+          <p>比反复点工具栏快得多，适合边开应用边对照。</p>
+        </div>
+        <div class="table-card reveal">
+          <table>
+            <thead>
+              <tr><th>手势</th><th>作用</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>双指开合</td><td>缩放画布</td></tr>
+              <tr><td>双指点按</td><td>撤销上一步</td></tr>
+              <tr><td>三指点按</td><td>重做被撤销的一步</td></tr>
+              <tr><td>按住色圈拖到画布</td><td>用当前颜色填充目标区域</td></tr>
+              <tr><td>画布左侧滑条</td><td>画画过程中实时调笔刷粗细与透明度</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">撤销 / 重做的步数很深，画错了放心退；界面各选项名称随版本略有差异，以设备上的实际界面为准。</p>
+      </div>
+    </section>
+
+    <!-- 版本参数 -->
+    <section class="section" id="spec">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>版本参数速览
+            <svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 q25 -8 50 0 t50 0 t50 0 t46 0" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/></svg>
+          </h2>
+          <p>以下为本文所对应版本的本地采集信息，拿到安装包后可逐项核对。</p>
+        </div>
+        <div class="spec-grid">
+          <div class="table-card reveal">
+            <ul class="spec-list">
+              <li><span class="k">版本号</span><span class="v">2.2.7</span></li>
+              <li><span class="k">安装包大小</span><span class="v">200.88M</span></li>
+              <li><span class="k">包名</span><span class="v">com.tktn.ycfn</span></li>
+              <li><span class="k">MD5</span><span class="v">039BE953432445EF6D185890CFCA8080</span></li>
+              <li><span class="k">系统要求</span><span class="v">安卓 5.2 及以上</span></li>
+              <li><span class="k">界面语言</span><span class="v">简体中文</span></li>
+              <li><span class="k">资费方式</span><span class="v">本体可免费安装，含应用内购买项目</span></li>
+            </ul>
+          </div>
+          <div class="tip-card reveal">
+            <h3>搜到的可能不是这一款</h3>
+            <p>「iArtbook」这个名字撞了好几款应用：应用商店里另有一款英文专业绘画应用（版本号到 10.x，主打 Apple Pencil），安卓上还有一款轻量应用的包名是 risko.digitalpaint，界面与本文描述完全对不上。</p>
+            <p>核对包名是唯一可靠的办法：com.tktn.ycfn 才是本文介绍的中文安卓版。主界面为「画册 / 创作 / 像素 / 我的」等板块，应用商店里能搜到更新的 2.3.x 版本，入口可能略有差异。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>常见问题
+            <svg viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 q25 -8 50 0 t50 0 t50 0 t46 0" fill="none" stroke="#c4553d" stroke-width="3" stroke-linecap="round"/></svg>
+          </h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>装不上怎么办？</summary>
+            <div class="faq-a">
+              <p>最常见的三种情况：一是系统提示「禁止安装未知来源」，到系统设置里给对应的安装来源打开「允许安装」再重试；二是存储不足，安装包 200.88M，解包阶段的临时占用更大，建议先清出 1GB 以上余量；三是提示解析失败或不兼容，多半是文件没下完整（小于 200.88M），重新下载，或确认安卓版本不低于 5.2。</p>
+            </div>
+          </details>
+          <details>
+            <summary>画好的作品保存在哪里？会丢吗？</summary>
+            <div class="faq-a">
+              <p>绘画过程自动保存，不需要找保存按钮；但作品默认留在应用的作品库里，只有走一次导出，相册里才会出现图片文件。卸载应用会连同作品一起删掉，换机或重装前先把要留的作品导出到相册。</p>
+            </div>
+          </details>
+          <details>
+            <summary>画画时卡顿掉帧怎么排查？</summary>
+            <div class="faq-a">
+              <p>按影响从大到小：画布尺寸选得过大是头号原因，手机上一般用预设尺寸就够；其次是图层数太多，画完一阶段就合并或删掉不要的层；再清一清后台程序。运行内存小的老设备建议控制画布与图层数量，逐帧动画也尽量控制在短篇。</p>
+            </div>
+          </details>
+          <details>
+            <summary>上色总是涂出线稿外面怎么办？</summary>
+            <div class="faq-a">
+              <p>最治本的办法是把上色图层拖到线稿图层下方，线稿自然压住颜色；也可以先用套索圈住封闭区域再切油漆桶填充，颜色只落在选区内；新版本的填充工具还带「扩展像素」参数，线稿缝隙闭合不严时能减少外溢。</p>
+            </div>
+          </details>
+          <details>
+            <summary>要花钱吗？</summary>
+            <div class="faq-a">
+              <p>应用本体免费安装，内有应用内购买项目，具体内容与定价以应用内实际显示为准；不购买也能使用绘画、填色等基础功能。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <h2>准备好动手画了吗</h2>
+      <p>版本 2.2.7 · 安装包 200.88M · 安卓 5.2 及以上设备均可安装</p>
+      <a class="btn btn-primary" data-link="download" href="#">获取安装文件资源</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-line">
+      <p>本页为第三方介绍页面，仅作功能说明与获取指引；展示素材来自公开资料，版权归原作者所有。</p>
+    </div>
+  </footer>
+
+  <!-- 浮动按钮 -->
+  <div class="fab">
+    <button id="toTop" aria-label="返回顶部">↑</button>
+    <a class="fab-dl" data-link="download" href="#" aria-label="获取安装文件资源">↓</a>
+  </div>
+
+  <script src="/assets/js/links.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
