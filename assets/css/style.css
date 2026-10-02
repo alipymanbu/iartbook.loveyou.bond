@@ -224,6 +224,21 @@ a:hover { text-decoration: underline; }
 .ph-blue { background: var(--blue); }
 .ph-green { background: var(--green); }
 
+/* ---------------- 界面预览 ---------------- */
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 900px) { .shots { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .shots { grid-template-columns: 1fr; } }
+.shot {
+  border: 2px solid var(--ink); border-radius: var(--radius);
+  background: var(--paper-2); overflow: hidden;
+  box-shadow: 4px 4px 0 var(--line);
+}
+.shot img { width: 100%; height: auto; }
+.shot figcaption {
+  padding: 9px 12px; font-size: 13px; color: var(--ink-soft);
+  border-top: 1.5px dashed var(--line);
+}
+
 /* ---------------- 手势表 ---------------- */
 .table-card {
   border: 2px solid var(--ink); border-radius: var(--radius);
